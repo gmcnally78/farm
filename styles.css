@@ -48,7 +48,252 @@ table {
 }
 /* end of css reset */
 
-/* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap')
 
-/* css variables */
+
+/* Reset and Base Styles... (existing reset code) */
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+/* CSS variables */
+:root {
+    --green: #06A816;
+    --orange: #E75D02; 
+    --black: #000000;
+    --white: #ffffff;
+
+    --fonts: 'Habibi', 'Irish Grover'; 
+}
+
+body {
+    display: flex; /* Optional: For vertical/horizontal centering */
+    flex-direction: column; /* Or row */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: 'Habibi';
+	font-size: 1.25;
+	text-align: center;
+}
+main {
+    margin: 0 auto; /* Only effective if main has a defined width */
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover';
+}
+
+h1 {
+	font-size: 2.5em;
+	text-shadow: 2px 2px 5px #000000;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.25em;
+}
+
+header {
+	width: 100%;
+	background-color: #06A816;
+	color: #ffffff;
+	
+}
+header p {
+	padding-bottom: 20px;
+	font-style: italic; 
+}
+
+/* footer {
+	width: 100%;
+	background-color: #06A816;
+	color: #ffffff;
+}
+
+.copyright {
+	background-color: #ffffff;
+	color: #06A816;
+	margin-bottom: 20px;
+} */
+
+footer {
+    background-color: #06A816; /* Green background for the footer */
+    width: 100%; /* Padding for the footer */
+	margin-top: 20px;
+	line-height: 1.5vh;
+}
+address {
+	padding: 20px 0px;
+}
+.contact-info h2 {
+	margin-top: 20px;
+}
+
+.contact-info, .hours {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Padding for spacing */
+    text-align: center; /* Center the text */
+	color: #ffffff;
+}
+
+.hours h2 {
+	margin-bottom: 20px;
+}
+
+.copyright {
+    background-color: #ffffff; /* White background for the copyright section */
+    padding: 10px 0; /* Optional: Add padding for spacing */
+    text-align: center; /* Center the copyright text */
+    position: relative; /* Positioning context for full width */
+    width: 100%; /* Ensure it spans the full width */
+    margin-bottom: 0; /* Align to the bottom */
+	color:#06A816;
+}
+
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 18vh; /* Optional: Full viewport height */
+	
+}
+.container ul {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr; /* One column that takes full width */
+    grid-template-rows: 1fr 1fr; /* Create 2 rows */
+    gap: 20px; /* Space between the rows */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+
+.container ul li {
+    background-color:#E75D02 ; /* Set background color */
+    color: #ffffff; /* Set text color */
+    padding: 15px; /* Add padding for a button-like appearance */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to pointer (optional) */
+	width: 250px; /* Set a fixed width */
+}
+
+#section1 {
+	text-align: left;
+	padding: 0px 15px;
+}
+#section1 h2 {
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#section1 p {
+	line-height: 1.5; /* Adjusts line spacing */
+}
+
+
+.fruits {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center the figures */
+}
+
+.fruits h2 {
+    text-align: left; /* Align h2 text to the left */
+    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+}
+
+.fruits h3 {
+    text-align: center; /* Keep h3 centered */
+    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+	margin: 20px auto 10px;
+}
+
+.image-caption {
+    position: relative; /* Position relative for absolute positioning of figcaption */
+    margin: 10px; /* Space between figures */
+}
+
+.image-caption img {
+    display: block; /* Remove bottom space of images */
+    width: 200px; /* Set a fixed width or adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figcaption {
+    position: absolute; /* Position it absolutely within the figure */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Start from the left */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 5px 15px; /* Adjust padding for shorter background */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+#section3 {
+	text-align: left;
+	padding: 0px 15px;
+}
+#section3 h2 {
+	padding: 20px auto;
+	text-align: left;
+}
+
+#section3 p {
+	line-height: 1.5; /* Adjusts line spacing */
+}
+
+
+.vegetables {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center the figures */
+}
+
+.vegetables h2 {
+    text-align: left; /* Align h2 text to the left */
+    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+
+.vegetables h3 {
+    text-align: center; /* Keep h3 centered */
+    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.image-caption {
+    position: relative; /* Position relative for absolute positioning of figcaption */
+    margin: 10px; /* Space between figures */
+}
+
+.image-caption img {
+    display: block; /* Remove bottom space of images */
+    width: 200px; /* Set a fixed width or adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figcaption {
+    position: absolute; /* Position it absolutely within the figure */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Start from the left */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 5px 15px; /* Adjust padding for shorter background */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+
+
+
+
+
+
