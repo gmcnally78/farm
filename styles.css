@@ -64,7 +64,7 @@ table {
 }
 
 body {
-    display: flex; /* Optional: For vertical/horizontal centering */
+    display: flex; /* vertical/horizontal centering */
     flex-direction: column; /* Or row */
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
@@ -75,7 +75,7 @@ body {
 	text-align: center;
 }
 main {
-    margin: 0 auto; /* Only effective if main has a defined width */
+    margin: 0 auto; 
 }
 
 h1, h2, h3 {
@@ -207,8 +207,8 @@ header p {
 	
 
 footer {
-    background-color: #06A816; /* Green background for the footer */
-    width: 100%; /* Padding for the footer */
+    background-color: #06A816; 
+    width: 100%; 
 	margin-top: 20px;
 	line-height: 1.5vh;
 }
@@ -258,9 +258,7 @@ address {
 		font-size: 0.8em;
 		line-height: 1.5em;
 	}
-	/* .hours-h2 {
-		grid-column: 1;
-	} */
+	
 	.hours-ul {
 		grid-column: 3;
 		/* justify-self: center; */
@@ -293,9 +291,9 @@ address {
 }
 
 .copyright {
-    background-color: #ffffff; /* White background for the copyright section */
-    padding: 10px 0; /* Optional: Add padding for spacing */
-    text-align: center; /* Center the copyright text */
+    background-color: #ffffff; 
+    padding: 10px 0; 
+    text-align: center; 
     position: relative; /* Positioning context for full width */
     width: 100%; /* Ensure it spans the full width */
     margin-bottom: 0; /* Align to the bottom */
@@ -307,28 +305,28 @@ address {
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 18vh; /* Optional: Full viewport height */
+    height: 18vh; 
 	background-color: #ffffff;
 }
 .container ul {
-    display: grid; /* Enable grid layout */
-    grid-template-columns: 1fr; /* One column that takes full width */
-    grid-template-rows: 1fr 1fr; /* Create 2 rows */
-    gap: 20px; /* Space between the rows */
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; 
+    list-style-type: none; 
+    padding: 0; 
 	background-color: #ffffff;
 }
 
 
 .container ul li {
-    background-color:#E75D02 ; /* Set background color */
-    color: #ffffff; /* Set text color */
-    padding: 15px; /* Add padding for a button-like appearance */
-    border-radius: 5px; /* Optional: rounded corners */
-    text-align: center; /* Center the text */
-    cursor: pointer; /* Change cursor to pointer (optional) */
-	width: 250px; /* Set a fixed width */
+    background-color:#E75D02 ; 
+    color: #ffffff; 
+    padding: 15px; 
+    border-radius: 5px; 
+    text-align: center; 
+    cursor: pointer; 
+	width: 250px; 
 	border-width: 5px;
 	border: 2px solid #ffffff;
 }
@@ -426,8 +424,8 @@ address {
 }
 
 .fruits h3 {
-    text-align: center; /* Keep h3 centered */
-    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+    text-align: center; 
+    width: 100%; 
 	margin: 20px auto 10px;
 }
 
@@ -490,8 +488,8 @@ address {
 
 .image-caption img {
     display: block; /* Remove bottom space of images */
-    width: 200px; /* Set a fixed width or adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; 
+    height: auto; 
 }
 
 figcaption {
@@ -503,7 +501,7 @@ figcaption {
     color: white; /* White text color */
     text-align: center; /* Center the text */
     padding: 5px 15px; /* Adjust padding for shorter background */
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px; /* rounded corners */
 }
 
 #section3 {
@@ -547,14 +545,14 @@ figcaption {
 
 .vegetables h2 {
     text-align: left; /* Align h2 text to the left */
-    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+    width: 100%; /*  Make sure it takes the full width for alignment */
 	margin-top: 60px;
 	margin-bottom: 15px;
 }
 
 .vegetables h3 {
     text-align: center; /* Keep h3 centered */
-    width: 100%; /* Optional: Make sure it takes the full width for alignment */
+    width: 100%; /*  Make sure it takes the full width for alignment */
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
@@ -571,7 +569,7 @@ figcaption {
 }
 
 figcaption {
-    position: absolute; /* Position it absolutely within the figure */
+    position: absolute; 
     top: 50%; /* Center vertically */
     left: 50%; /* Start from the left */
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
@@ -579,7 +577,7 @@ figcaption {
     color: white; /* White text color */
     text-align: center; /* Center the text */
     padding: 5px 15px; /* Adjust padding for shorter background */
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px; /* rounded corners */
 }
 
 
